@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeInsight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="project-name">MemeInsight</div>
+        <div class="team-name">by Х Х и в продакшн</div>
+    </header>
+    
+    <section class="welcome-section">
+        <div class="welcome-title">Добро пожаловать в MemeInsight — ваш проводник в мир мемов!</div>
+        <div class="welcome-subtitle">Исследуйте мемы с нами 🚀</div>
+        <button class="start-button">Начать</button>
+    </section>
+
+    <div id="3d-container" class="model-container"></div>
+
+    <div class="content-sections-container">
+        <section class="content-section">
+            <h2 class="content-title">Заголовок первого блока</h2>
+            <div class="content-image">Место для первой картинки</div>
+            <p class="content-description">Место для описания первой картинки</p>
+        </section>
+        
+        <section class="content-section">
+            <h2 class="content-title">Заголовок второго блока</h2>
+            <div class="content-image">Место для второй картинки</div>
+            <p class="content-description">Место для описания второй картинки</p>
+        </section>
+
+        <section class="content-section">
+            <h2 class="content-title">Заголовок третьего блока</h2>
+            <div class="content-image">Место для третьей картинки</div>
+            <p class="content-description">Место для описания третьей картинки</p>
+        </section>
+    </div>
+
+    <section class="upload-section">
+        <h2 class="upload-title">Проанализируй свой мем</h2>
+        <div class="upload-zone">
+            <div class="upload-icon"></div>
+            <div class="upload-text">Загрузить мем</div>
+        </div>
+        <div class="analysis-output.visible">
+            <div class="analysis-message">
+                Привет! Я проанализировал твой мем и вот что могу сказать...
+                Мем Pepe the Frog — это один из самых известных и многогранных интернет-мемов, который за годы своего существования претерпел множество трансформаций и интерпретаций. Его история отражает как позитивные, так и противоречивые аспекты интернет-культуры. 
+                (Это всё пример)
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="three-scene.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
