@@ -303,9 +303,14 @@ body {
     box-sizing: border-box;
 }
 
+.analysis-output.visible {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
+}
+
 .analysis-message {
     width: 100%;
-    max-width: calc(800px - 4rem); /* Учитываем padding родителя */
+    max-width: calc(800px - 4rem);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 1rem 1.5rem;
@@ -332,6 +337,17 @@ body {
     z-index: -1;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes messageSlide {
     from {
         opacity: 0;
@@ -343,18 +359,3 @@ body {
     }
 }
 
-.analysis-output.visible {
-    display: block;
-    animation: fadeIn 0.5s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
