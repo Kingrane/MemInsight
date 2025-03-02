@@ -53,16 +53,19 @@
 
     <section class="upload-section">
         <h2 class="upload-title">Проанализируй свой мем</h2>
-        <div class="upload-zone">
-            <div class="upload-icon"></div>
-            <div class="upload-text">Загрузить мем</div>
-        </div>
-        <div class="analysis-output.visible">
-            <div class="analysis-message">
-                Привет! Я проанализировал твой мем и вот что могу сказать...
-                Мем Pepe the Frog — это один из самых известных и многогранных интернет-мемов, который за годы своего существования претерпел множество трансформаций и интерпретаций. Его история отражает как позитивные, так и противоречивые аспекты интернет-культуры. 
-                (Это всё пример)
+        <div class="upload-container">
+            <div class="upload-zone" id="dropZone">
+                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                <div class="upload-icon"></div>
+                <div class="upload-text">Загрузить мем</div>
+                <img id="imagePreview" src="#" alt="Предпросмотр мема" style="display: none;">
             </div>
+            <textarea id="promptInput" rows="3" placeholder="Задайте вопрос о меме или оставьте пустым для общего анализа"></textarea>
+            <button id="uploadBtn" class="analyze-button">Анализировать</button>
+            <div class="loading" id="loading"></div>
+        </div>
+        <div class="analysis-output" id="analysisOutput">
+            <div class="analysis-message" id="response"></div>
         </div>
     </section>
 
