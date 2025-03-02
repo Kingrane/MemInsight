@@ -89,7 +89,7 @@ class ThreeScene {
                 this.object.position.y = isMobile ? 0 : 4;
 
                 // Поворачиваем модель на 90 градусов вправо
-                this.object.rotation.y = -Math.PI / 2;
+                this.object.rotation.y = -Math.PI / 3;
 
                 // Применяем улучшенные материалы для лучшего освещения
                 this.object.traverse((child) => {
